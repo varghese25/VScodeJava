@@ -8,12 +8,27 @@ public class riding {
     // }
     // }
     // Multiple Object
-    int x = 25;
+    // int x = 25;
+    // public static void main(String[] args) {
+    // riding myRiding1 = new riding();
+    // riding myRiding2 = new riding();
+    // myRiding2.x = 50;
+    // System.out.println(myRiding1.x);
+    // System.out.println(myRiding2.x);
+    // }
+    // }
+
+    // Multiple Attributes
+    String fString = "Evan";
+    String mString = "Poulose";
+    String lString = "Varghese";
+    int age = 6;
+
     public static void main(String[] args) {
-        riding myRiding1 = new riding();
-        riding myRiding2 = new riding();
-        myRiding2.x = 50;
-        System.out.println(myRiding1.x);
-        System.out.println(myRiding2.x);
+        riding obj = new riding();
+        System.out.println("Name : " + obj.fString + " " + obj.mString + " " + obj.lString);
+        System.out.println("Age: " + obj.age);
+
     }
 }
+
