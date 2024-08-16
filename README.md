@@ -1,8 +1,8 @@
 **OOPS in JAVA CONCEPTS**<br>
- OOP is a programming paradigm that uses the concept of objects and classes to represent data and behaviors and it has 4 core concepts:
-*1. Encapsulation is the process of hiding implementation details while providing a public interface.*
-*2. Abstraction is the process of hiding complex implementation details while providing a simple interface.*
-*3. Inheritance allows new classes to be based on existing classes and to inherit properties and methods from their parent class*
+ OOP is a programming paradigm that uses the concept of objects and classes to represent data and behaviors and it has 4 core concepts:<br>
+*1. Encapsulation is the process of hiding implementation details while providing a public interface.*<br>
+*2. Abstraction is the process of hiding complex implementation details while providing a simple interface.*<br>
+*3. Inheritance allows new classes to be based on existing classes and to inherit properties and methods from their parent class*<br>
 *4. Polymorphism allows objects of different types to be treated as if they were the same type.*<br>
 
 
@@ -83,14 +83,14 @@ package poly.learing;
 	System.out.println("Law") / Chld want to study the Law/ 
 	}
 	
-	Out Put: Law<br>
+	Out Put: Law <br>
 
 
 
 *Method Overlodaing*<br>
 
 // Java program to demonstrate working of method 
-// overloading in Java 
+// overloading in Java <br>
 
 public class Sum { 
 	// Overloaded sum(). This sum takes two int parameters 
@@ -126,8 +126,7 @@ public class Sum {
 outPut: 
 30
 60
-31.0
-<br>
+31.0<br>
 
 
 
@@ -176,24 +175,24 @@ package abstaction.learning;
 }
 <br>
 
-/* Step 1 Complie parent class PS E:\myWorks\VsCodeJava> javac Parent.java
-   Step 2 Complie child class  PS E:\myWorks\VsCodeJava> javac Child.java 
-   Step 3 Execute the child    PS E:\myWorks\VsCodeJava> java Child       
+/* Step 1 Complie parent class PS E:\myWorks\VsCodeJava> javac Parent.java<br>
+   Step 2 Complie child class  PS E:\myWorks\VsCodeJava> javac Child.java <br>
+   Step 3 Execute the child    PS E:\myWorks\VsCodeJava> java Child <br>      
       
    Out Put is College */ <br>  
   
   
   <br>------------------------------------------------------------<br>
   
-  **Final key word in Java 3 placess:**
+  **Final key word in Java 3 placess:** <br>
   
-  1) *Final variable: Cannot Reassign*
-  2) *Final method: cannot Override*
-  3) *Final class : cannot inherit*
+  1) *Final variable: Cannot Reassign*<br>
+  2) *Final method: cannot Override*<br>
+  3) *Final class : cannot inherit*<br>
 
 
 
-*InterFace: Called as CONTRACT or Set of Rules:*
+*InterFace: Called as CONTRACT or Set of Rules:*<br>
 
 
 
