@@ -89,43 +89,43 @@ package poly.learing;
 
 *Method Overlodaing*<br>
 
-// Java program to demonstrate working of method 
+// Java program to demonstrate working of method <br>
 // overloading in Java <br>
 
-public class Sum { 
-	// Overloaded sum(). This sum takes two int parameters 
-	public int sum(int x, int y) 
- {
- return (x + y); 
- } 
+public class Sum { <br>
+	// Overloaded sum(). This sum takes two int parameters <br>
+	public int sum(int x, int y) <br>
+ {<br>
+ return (x + y); <br>
+ } <br>
 
-	// Overloaded sum(). This sum takes three int parameters 
-	public int sum(int x, int y, int z) 
-	{ 
-		return (x + y + z); 
-	} 
+	// Overloaded sum(). This sum takes three int parameters <br>
+	public int sum(int x, int y, int z) <br>
+	{ <br>
+		return (x + y + z); <br>
+	} <br>
 
-	// Overloaded sum(). This sum takes two double 
-	// parameters 
-	public double sum(double x, double y) 
-	{ 
-		return (x + y); 
-	} 
+	// Overloaded sum(). This sum takes two double <br>
+	// parameters<br>
+	public double sum(double x, double y) <br>
+	{ <br>
+		return (x + y); <br>
+	} <br>
 
-	// Driver code 
-	public static void main(String args[]) 
-	{ 
-		Sum s = new Sum(); 
-		System.out.println(s.sum(10, 20)); 
-		System.out.println(s.sum(10, 20, 30)); 
-		System.out.println(s.sum(10.5, 20.5)); 
-	} 
-}
+	// Driver code <br>
+	public static void main(String args[]) <br>
+	{<br>
+		Sum s = new Sum(); <br>
+		System.out.println(s.sum(10, 20)); <br>
+		System.out.println(s.sum(10, 20, 30)); <br>
+		System.out.println(s.sum(10.5, 20.5)); <br>
+	} <br>
+} <br>
 
 
-outPut: 
-30
-60
+**outPut**: <br>
+30 <br>
+60 <br>
 31.0<br>
 
 
@@ -203,60 +203,59 @@ package abstaction.learning;
 
 **Example Code**: 1<br>
 
-public abstract class absKathir {
+public abstract class absKathir {<br>
 
-    public abstract void study();
+    public abstract void study();<br>
     
-}
+}<br>
 
 
 
-public class absVenba extends absKathir {
-    public static void main(String[] args) {
-        absVenba venba = new absVenba();
-        venba.study();
+public class absVenba extends absKathir {<br>
+    public static void main(String[] args) {<br>
+        absVenba venba = new absVenba();<br>
+        venba.study();<br>
 
-    }
+    }<br>
 
-    public void study() {
-        System.out.println("Study Well");
-    }
+    public void study() {<br>
+        System.out.println("Study Well");<br>
+    }<br>
 
 } <br>
-**OutPut**: Study Well<br> 
+**OutPut**:<br> Study Well<br> 
 ----------------------<br>
 
 **Example Code**: 2 <br>
 
-public interface TrafficRules {
-    int fine = 1000; // Static Variables
+public interface TrafficRules { <br>
+    int fine = 1000; <br> // Static Variables <br>
 
-    void wearHelmet(); // public class absVenba extends absKathir implements TrafficRules // INHERITANCE & implements
+    void wearHelmet(); <br> // public class absVenba extends absKathir implements TrafficRules // INHERITANCE & implements <br>
 
-}
-<br>
+}<br>
 
-public class absVenba extends absKathir implements TrafficRules {
+public class absVenba extends absKathir implements TrafficRules { <br>
 /* interface code starts from below */<br>
-    @SuppressWarnings("static-access")
-    public static void main(String[] args) {
-        absVenba venba = new absVenba();
-        venba.study();
-        venba.wearHelmet(); // TafficRules Class method
-        System.out.println("Fine 1:" + " " + venba.fine); /*any one either class name venba can be give to view thefine amout or by interface name*/
-        System.out.println("Fine 2:" + " " + TrafficRules.fine); /*any one either class name venba can be give to view the fine amout or by interface name */
+    @SuppressWarnings("static-access")<br>
+    public static void main(String[] args) { <br>
+        absVenba venba = new absVenba();<br>
+        venba.study();<br>
+        venba.wearHelmet(); // TafficRules Class method<br>
+        System.out.println("Fine 1:" + " " + venba.fine); /*any one either class name venba can be give to view thefine amout or by interface name*/ <br>
+        System.out.println("Fine 2:" + " " + TrafficRules.fine); /*any one either class name venba can be give to view the fine amout or by interface name */<br>
 
-    }
+    } <br>
 
-    @Override /*trafficRules method override add the my own rule in TrafficRule method only created here add msg sop*/
-    public void wearHelmet() {
-        System.out.println("WearHelmet while riding"); /* traffic rule defination given by veba */
-    }
+    @Override<br> /*trafficRules method override add the my own rule in TrafficRule method only created here add msg sop*/<br>
+    public void wearHelmet() { <br>
+        System.out.println("WearHelmet while riding"); /* traffic rule defination given by veba */<br>
+    } <br>
 
-    @Override /*absvenda and abskathir has same method override add the my own rule in absvenda method only created here add msg sop*/
-    public void study() {
-        System.out.println("Study well"); /* parent study defination given by venba */
-    }
+    @Override<br> /*absvenda and abskathir has same method override add the my own rule in absvenda method only created here add msg sop*/<br>
+    public void study() {<br>
+        System.out.println("Study well"); /* parent study defination given by venba */<br>
+    }<br>
 
 }
 <br>
