@@ -180,8 +180,8 @@ package abstaction.learning;
    Step 3 Execute the child    PS E:\myWorks\VsCodeJava> java Child <br>      
       
    Out Put is College */ <br>  
-  
-  
+
+ 
   <br>------------------------------------------------------------<br>
   
   **Final key word in Java 3 placess:** <br>
@@ -192,9 +192,86 @@ package abstaction.learning;
 
 
 
-*InterFace: Called as CONTRACT or Set of Rules:*<br>
+**InterFace: Called as CONTRACT or Set of Rules**:<br>
+
+*Number Implementation of methods*.<br>
+<c>*All methods are public and static by default*.</c><br>
+*All variables are static and final by default*.<br>
+
+**Java KeyWords: Implements**<br>
 
 
+**Example Code**: 1<br>
+
+public abstract class absKathir {
+
+    public abstract void study();
+    
+}
+
+
+
+public class absVenba extends absKathir {
+    public static void main(String[] args) {
+        absVenba venba = new absVenba();
+        venba.study();
+
+    }
+
+    public void study() {
+        System.out.println("Study Well");
+    }
+
+} <br>
+**OutPut**: Study Well<br> 
+----------------------<br>
+
+**Example Code**: 2 <br>
+
+public interface TrafficRules {
+    int fine = 1000; // Static Variables
+
+    void wearHelmet(); // public class absVenba extends absKathir implements TrafficRules // INHERITANCE & implements
+
+}
+<br>
+
+public class absVenba extends absKathir implements TrafficRules {
+/* interface code starts from below */<br>
+    @SuppressWarnings("static-access")
+    public static void main(String[] args) {
+        absVenba venba = new absVenba();
+        venba.study();
+        venba.wearHelmet(); // TafficRules Class method
+        System.out.println("Fine 1:" + " " + venba.fine); /*any one either class name venba can be give to view thefine amout or by interface name*/
+        System.out.println("Fine 2:" + " " + TrafficRules.fine); /*any one either class name venba can be give to view the fine amout or by interface name */
+
+    }
+
+    @Override /*trafficRules method override add the my own rule in TrafficRule method only created here add msg sop*/
+    public void wearHelmet() {
+        System.out.println("WearHelmet while riding"); /* traffic rule defination given by veba */
+    }
+
+    @Override /*absvenda and abskathir has same method override add the my own rule in absvenda method only created here add msg sop*/
+    public void study() {
+        System.out.println("Study well"); /* parent study defination given by venba */
+    }
+
+}
+<br>
+*Step to Execute and output*:<br>
+
+PS E:\myWorks\VsCodeJava> javac TrafficRules.java<br>
+PS E:\myWorks\VsCodeJava> javac absVenba.java<br>    
+PS E:\myWorks\VsCodeJava> java absVenba<br>
+Study well<br>
+WearHelmet while riding<br>
+Fine 1: 1000<br>
+Fine 2: 1000<br>
+
+
+----------------------<br>
 
 
 
