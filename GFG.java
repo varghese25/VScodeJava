@@ -48,3 +48,10 @@ public class GFG {
 						+ gfg2); 
 	} 
 } 
+
+/* Out Put
+Original ArrayList : [Geeks, for, Geeks]
+Using LinkedHashSet:
+Modified ArrayList : [Geeks, for]
+Using HashSet:
+Modified ArrayList : [Geeks, for]*/
